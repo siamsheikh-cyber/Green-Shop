@@ -2,7 +2,7 @@ import { ReactNode } from "react";
 import PublicHeader from "./header";
 import PublicFooter from "./footer";
 
-function PublicLayout({ children }: { children: ReactNode }) {
+function PublicMainLayout({ children }: { children: ReactNode }) {
     return (
         <>
             <div className="flex flex-col min-h-screen ">
@@ -16,4 +16,4 @@ function PublicLayout({ children }: { children: ReactNode }) {
     );
 }
 
-export default PublicLayout;
+export default PublicMainLayout;

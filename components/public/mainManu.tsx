@@ -12,14 +12,16 @@ function MainManu() {
                     <div className="flex items-center">
                         <Link href="/" >
                             <Image
+                                loading="eager"
                                 src={"/logoipsum.png"}
                                 alt="logo"
                                 width={160}
                                 height={60}
+                                className="w-auto h-auto"
                             />
                         </Link>
                         <SearceForm />
-                        <div className="flex items-center gap-20 text-gray-500">
+                        <div className="flex items-center gap-15 text-gray-500">
                             <Link href="/" className="flex flex-col items-center">
                                 <GitCompareArrows />
                                 <span className="text-[14px]">Compare</span>
