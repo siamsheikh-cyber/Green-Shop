@@ -40,7 +40,7 @@ function SearceForm() {
                         <input
                             value={text}
                             onChange={(e) => setText(e.target.value)}
-                            placeholder="Search by product name"
+                            placeholder="by product name"
                             type="text"
                             className="py-1.5 px-3 w-full border-[2.5px]"
                         />

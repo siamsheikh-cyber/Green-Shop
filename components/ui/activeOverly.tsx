@@ -1,14 +1,15 @@
 import Image from "next/image";
 import { Button } from "./button";
 import Link from "next/link";
+import { X } from "lucide-react";
 
 function ActiveOverly({ isActive, onClick }: { isActive: boolean, onClick: () => void }) {
     return (
         <>
-            <div className="flex flex-col absolute top-full right-0 border w-70 p-2 mt-4 z-9">
+            <div className="flex flex-col absolute top-full right-0 border w-66 p-2 mt-4 z-9">
                 <div className="h-60 overflow-y-scroll">
                     {/* item one */}
-                    <div className="flex items-center gap-4 pb-3 mb-3 border-b">
+                    <div className="flex items-start gap-4 pb-3 mb-3 border-b">
                         <Image
                             src="https://placehold.co/600x400.png"
                             alt="product"
@@ -24,9 +25,10 @@ function ActiveOverly({ isActive, onClick }: { isActive: boolean, onClick: () =>
                                 <small>Size: M</small>
                             </div>
                         </div>
+                        <X className="cursor-pointer" />
                     </div>
                     {/* item two */}
-                    <div className="flex items-center gap-2 pb-3 mb-3 border-b">
+                    <div className="flex items-start gap-2 pb-3 mb-3 border-b">
                         <Image
                             src="https://placehold.co/600x400.png"
                             alt="product"
@@ -42,9 +44,10 @@ function ActiveOverly({ isActive, onClick }: { isActive: boolean, onClick: () =>
                                 <small>Size: M</small>
                             </div>
                         </div>
+                        <X className="cursor-pointer" />
                     </div>
                     {/* item three */}
-                    <div className="flex items-center gap-2 pb-3 mb-3 border-b">
+                    <div className="flex items-start gap-2 pb-3 mb-3 border-b">
                         <Image
                             src="https://placehold.co/600x400.png"
                             alt="product"
@@ -60,6 +63,7 @@ function ActiveOverly({ isActive, onClick }: { isActive: boolean, onClick: () =>
                                 <small>Size: M</small>
                             </div>
                         </div>
+                        <X className="cursor-pointer" />
                     </div>
                 </div>
                 {/* bottom section */}

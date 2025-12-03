@@ -12,7 +12,7 @@ function ShopingCarts() {
             <Link onMouseOver={() => setIsActive(true)} href="/" className="relative">
                 <div className="flex flex-col items-center">
                     <ShoppingCart />
-                    <span className="text-[14px]">Cart</span>
+                    <span className="text-[14px] hidden md:block">Cart</span>
 
                 </div>
                 <span className="absolute -top-1 -right-2 w-4 h-4 text-xs bg-primary rounded-full flex justify-center items-center text-white">8</span>

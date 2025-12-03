@@ -1,4 +1,5 @@
 import MainManu from "@/components/public/mainManu";
+import CompareArrows from "@/components/ui/compareArrows";
 import WishList from "@/components/ui/wishList";
 import { MapPin } from "lucide-react";
 
@@ -11,6 +12,9 @@ function PublicHeader() {
                         <div className="flex items-center gap-1.5 cursor-pointer text-white">
                             <MapPin size={20} />
                             <span>Track Order</span>
+                            <div className="md:hidden border-l pl-2">
+                                <CompareArrows />
+                            </div>
                         </div>
                         <div className="flex items-center gap-3 text-white">
                             <a href="tel:01339530000" className="border-r pr-2.5">01339539820</a>
