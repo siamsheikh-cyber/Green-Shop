@@ -2,12 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 import SearceForm from "../ui/searceForm";
 import { GitCompareArrows, Heart } from "lucide-react";
-import AllCarts from "../ui/allCarts";
+import ShopingCarts from "../ui/shopingCarts";
+import WishList from "../ui/wishList";
 
 function MainManu() {
     return (
         <>
-            <div>
+            <div className="">
                 <div className="my-container mt-5">
                     <div className="flex items-center">
                         <Link href="/" >
@@ -21,19 +22,19 @@ function MainManu() {
                             />
                         </Link>
                         <SearceForm />
-                        <div className="flex items-center gap-15 text-gray-500">
-                            <Link href="/" className="flex flex-col items-center">
-                                <GitCompareArrows />
-                                <span className="text-[14px]">Compare</span>
+                        <div className="flex items-center gap-12 text-gray-500">
+                            <Link href="/" className="relative">
+                                <div className="flex flex-col items-center">
+                                    <GitCompareArrows />
+                                    <span className="text-[14px]">Compare</span>
+                                </div>
+                                <span className="absolute -top-1 right-1 w-4 h-4 text-xs bg-primary rounded-full flex justify-center items-center text-white">5</span>
                             </Link>
-                            <Link href="/" className="flex flex-col items-center">
-                                <Heart />
-                                <span className="text-[14px]">Wishlist</span>
-                            </Link>
-                            <Link href="/" className="flex flex-col items-center">
-                                <AllCarts />
-                                <span className="text-[14px]">Cart</span>
-                            </Link>
+                            <div className="hidden md:block">
+                                <WishList />
+                            </div>
+                            <ShopingCarts />
+
                         </div>
                     </div>
                 </div>
