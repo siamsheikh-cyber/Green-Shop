@@ -42,7 +42,7 @@ function SearceForm() {
                             onChange={(e) => setText(e.target.value)}
                             placeholder="by product name"
                             type="text"
-                            className="py-1.5 px-3 w-full border-[2.5px]"
+                            className="py-2 px-3 w-full border"
                         />
 
                         <button className="hover:text-primary cursor-pointer">
@@ -51,7 +51,7 @@ function SearceForm() {
                     </div>
                     {/* All search product */}
                     {text &&
-                        <div className="absolute top-full right-0 border w-full ">
+                        <div className="absolute top-full right-0 border w-full z-10 bg-white">
                             <div className="h-70 overflow-y-scroll ">
                                 <div className="px-4 py-1">
                                     {searchData.length == 0 && <p className="text-center text-2xl mt-10">Data not found</p>}

@@ -1,4 +1,5 @@
 import MainManu from "@/components/public/mainManu";
+import Navbar from "@/components/public/navebar";
 import CompareArrows from "@/components/ui/compareArrows";
 import WishList from "@/components/ui/wishList";
 import { MapPin } from "lucide-react";
@@ -27,6 +28,7 @@ function PublicHeader() {
                 </div>
             </div>
             <MainManu />
+            <Navbar />
 
         </>
     );

@@ -1,6 +1,6 @@
 function PublicFooter() {
     return (
-        <div>PublicFooter</div>
+        <div></div>
     );
 }
 

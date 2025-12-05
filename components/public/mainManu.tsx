@@ -4,14 +4,14 @@ import SearceForm from "../ui/searceForm";
 import { GitCompareArrows, Heart } from "lucide-react";
 import ShopingCarts from "../ui/shopingCarts";
 import WishList from "../ui/wishList";
-import MobileMainMenu from "../ui/MobileMainMenu";
+import MobileMainMenu from "./MobileMainMenu";
 import CompareArrows from "../ui/compareArrows";
 
 function MainManu() {
     return (
         <>
-            <div className="">
-                <div className="my-container mt-5">
+            <div className="bg-white">
+                <div className="my-container mt-4 mb-4 ">
                     <div className="flex items-center relative">
                         <Link href="/" >
                             <Image

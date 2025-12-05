@@ -1,9 +1,9 @@
 "use client"
 
 import { Menu, Search, X } from "lucide-react";
-import ShopingCarts from "./shopingCarts";
+import ShopingCarts from "../ui/shopingCarts";
 import { useState } from "react";
-import SearceForm from "./searceForm";
+import SearceForm from "../ui/searceForm";
 
 function MobileMainMenu() {
     const [isActive, setIsActive] = useState(false)
@@ -17,11 +17,11 @@ function MobileMainMenu() {
             {
                 isActive &&
                 <div className="absolute w-full flex items-center  bg-white h-full top-0 left-0">
-                    <div className="flex-1 ml-0.5">
+                    <div className="flex-1">
                         <SearceForm />
                     </div>
                     <div className="flex items-center justify-center cursor-pointer">
-                        <X onClick={() => setIsActive(false)} className="mr-6" />
+                        <X onClick={() => setIsActive(false)} className="mr-5" />
                     </div>
                 </div>
             }

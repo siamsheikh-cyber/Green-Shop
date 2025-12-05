@@ -15,7 +15,7 @@ function ShopingCarts() {
                     <span className="text-[14px] hidden md:block">Cart</span>
 
                 </div>
-                <span className="absolute -top-1 -right-2 w-4 h-4 text-xs bg-primary rounded-full flex justify-center items-center text-white">8</span>
+                <span className="absolute -top-1.5 -right-2.5 w-4 h-4 text-xs bg-primary rounded-full flex justify-center items-center text-white">8</span>
             </Link>
             {isActive && <ActiveOverly onClick={() => setIsActive(false)} isActive={isActive} />}
 
