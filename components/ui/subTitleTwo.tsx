@@ -2,7 +2,7 @@ import { ChevronRight } from "lucide-react";
 import Link from "next/link";
 
 
-const sub = [100, 200, 300, 400]
+const sub = [100, 200, 300, 400, 500, 600, 700]
 
 function SubTitleTwo() {
     return (
