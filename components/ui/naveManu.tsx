@@ -18,29 +18,35 @@ function NaveManu() {
                 <li className="h-13 flex items-center hover:text-primary">
                     <Link href={"/"}>Blog</Link >
                 </li>
-                <li className="relative">
-                    <Link href={"/"} className="flex gap-0.5 items-center justify-center my-auto h-13 hover:text-primary group">
+                {/* '''''''''''''pages......... */}
+                <li className="relative group">
+                    <Link href={"/"} className="flex gap-0.5 items-center justify-center my-auto h-13 hover:text-primary ">
                         <span>Pages</span>
                         <ChevronDown className="w-4 mt-1.5" />
                     </Link>
 
                     {/* pages list start */}
-                    <div className="absolute top-full left-0 bg-white shadow-2xs w-[230px] visible opacity-0 group-hover:opacity-100 group-hover:invisible">
+                    <div className="absolute top-full left-0 bg-white shadow-2xs w-[230px] invisible opacity-0 group-hover:opacity-100 group-hover:visible">
                         <ul className="border-t-primary border-t-3 px-4 py-1.5 flex flex-col gap-1">
-                            <li>
-                                <Link href={"/"} className="flex gap-1"><ChevronRight className="w-4" />About Us</Link>
+                            <li className="hover:text-primary">
+                                <Link href={"/"} className="flex gap-1">
+                                    <ChevronRight className="w-4" />About Us</Link>
                             </li>
-                            <li>
-                                <Link href={"/"} className="flex gap-1"><ChevronRight className="w-4" />Hoe it works</Link>
+                            <li className="hover:text-primary">
+                                <Link href={"/"} className="flex gap-1">
+                                    <ChevronRight className="w-4" />Hoe it works</Link>
                             </li>
-                            <li>
-                                <Link href={"/"} className="flex gap-1"><ChevronRight className="w-4" />Privacy-policy</Link>
+                            <li className="hover:text-primary">
+                                <Link href={"/"} className="flex gap-1">
+                                    <ChevronRight className="w-4" />Privacy-policy</Link>
                             </li>
-                            <li>
-                                <Link href={"/"} className="flex gap-1"><ChevronRight className="w-4" />Terms-and-service</Link>
+                            <li className="hover:text-primary">
+                                <Link href={"/"} className="flex gap-1">
+                                    <ChevronRight className="w-4" />Terms-and-service</Link>
                             </li>
-                            <li>
-                                <Link href={"/"} className="flex gap-1"><ChevronRight className="w-4" />Return-policy</Link>
+                            <li className="hover:text-primary">
+                                <Link href={"/"} className="flex gap-1">
+                                    <ChevronRight className="w-4" />Return-policy</Link>
                             </li>
                         </ul>
                     </div>
