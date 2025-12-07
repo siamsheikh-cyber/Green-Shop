@@ -6,8 +6,8 @@ import { X } from "lucide-react";
 function ActiveOverly({ isActive, onClick }: { isActive: boolean, onClick: () => void }) {
     return (
         <>
-            <div className="flex flex-col absolute top-full right-0 border w-66 p-2 mt-4 z-9">
-                <div className="h-60 overflow-y-scroll">
+            <div className="flex flex-col absolute top-full right-0 border w-66 p-2 mt-4 z-9 bg-white">
+                <div className="h-60 overflow-y-scroll ">
                     {/* item one */}
                     <div className="flex items-start gap-4 pb-3 mb-3 border-b">
                         <Image
