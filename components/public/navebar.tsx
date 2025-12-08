@@ -4,6 +4,7 @@ import NaveManu from "../ui/naveManu";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../ui/tabs";
 import Link from "next/link";
 import MobileMenuPages from "../ui/mobileManuPages";
+import MobileMenuCategory from "../ui/mobileMenuCategory";
 
 function Navbar() {
     return (
@@ -22,7 +23,7 @@ function Navbar() {
             {/* Mobile Navbar Start */}
             <div className="lg:hidden ">
                 <div className="my-container ">
-                    <div className="fixed left-0 top-0 h-screen w-[300px] shadow-xl bg-white">
+                    <div className="fixed left-0 top-0 h-screen overflow-y-scroll w-[300px] shadow-xl bg-white">
                         {/* top */}
                         <div className="bg-primary h-12 flex justify-between items-center px-3">
                             <h2 className="text-[22px]">Navigation</h2>
@@ -60,8 +61,15 @@ function Navbar() {
                                             </li>
                                         </ul>
                                     </div>
+                                    {/* Menu End */}
                                 </TabsContent>
-                                <TabsContent value="category">Change your password here.</TabsContent>
+                                {/* Category Start */}
+                                <TabsContent value="category">
+                                    {/* mobileMenuCategory start */}
+                                    <MobileMenuCategory />
+                                    {/* mobileMenuCategory end */}
+                                </TabsContent>
+                                {/* Category End */}
                             </Tabs>
                         </div>
 
@@ -75,14 +83,6 @@ function Navbar() {
 
 
 
-{/* <ul>
-    <li>Women Clothing</li>
-    <li>Man Clothing </li>
-    <li>Electronics </li>
-    <li>Beauty & Personal care </li>
-    <li>Web Themes & Templates </li>
-    <li>Sports & Entertenmaint </li>
-    <li>Home & Garden </li>
-     </ul> */}
+
 
 export default Navbar;
