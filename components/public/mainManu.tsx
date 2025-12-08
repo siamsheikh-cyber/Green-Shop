@@ -24,7 +24,7 @@ function MainManu() {
                             />
                         </Link>
                         {/* Dekstop menu start*/}
-                        <div className="flex-1 hidden md:flex">
+                        <div className="flex-1 hidden lg:flex">
                             <SearceForm />
                             <div className="hidden md:flex items-center gap-12 text-gray-500">
                                 <CompareArrows />
@@ -37,7 +37,7 @@ function MainManu() {
                         {/* Dekstop menu end*/}
 
                         {/* mobile menu start */}
-                        <div className="flex-1 md:hidden">
+                        <div className="flex-1 lg:hidden">
                             <MobileMainMenu />
                         </div>
                         {/* mobile menu end */}
