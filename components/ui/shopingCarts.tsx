@@ -9,10 +9,10 @@ function ShopingCarts() {
     const [isActive, setIsActive] = useState(false)
     return (
         <div className="relative">
-            <Link onMouseOver={() => setIsActive(true)} href="/" className="relative">
+            <Link onClick={() => setIsActive(!isActive)} href="/" className="relative">
                 <div className="flex flex-col items-center">
                     <ShoppingCart />
-                    <span className="text-[14px] hidden md:block">Cart</span>
+                    <span className="text-[14px] hidden lg:block">Cart</span>
 
                 </div>
                 <span className="absolute -top-1.5 -right-2.5 w-4 h-4 text-xs bg-primary rounded-full flex justify-center items-center text-white">8</span>
