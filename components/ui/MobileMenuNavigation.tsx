@@ -211,14 +211,14 @@ function MobileNavigationMenu() {
             {isActive &&
                 <div className="lg:hidden ">
                     <div className="my-container ">
-                        <div className="fixed left-0 top-0 h-screen overflow-y-scroll w-[300px] shadow-xl bg-white">
+                        <div className="fixed left-0 top-0 w-[300px] shadow-xl bg-white">
                             {/* top */}
                             <div className="bg-primary h-12 flex justify-between items-center px-3">
                                 <h2 className="text-[22px]">Navigation</h2>
                                 <X onClick={() => updateActive(!isActive)} size={20} className="cursor-pointer" />
                             </div>
                             {/* Middle */}
-                            <div>
+                            <div className="">
                                 <Tabs defaultValue="menu" className="w-full">
                                     <TabsList className="w-full px-1.5 border-0 rounded-none">
                                         <TabsTrigger className="w-[50%] cursor-pointer rounded-[3px]" value="menu">Menu</TabsTrigger>
@@ -227,7 +227,7 @@ function MobileNavigationMenu() {
                                     {/* Bottom */}
                                     <TabsContent value="menu">
                                         {/* Menu Start */}
-                                        <div className="px-1.5">
+                                        <div className="px-1.5 h-[calc(100vh-100px)]">
                                             <ul className="flex flex-col gap-2.5">
                                                 <li className=" flex items-center hover:text-primary">
                                                     <ChevronRight size={12} /> <Link href={"/"}>Home</Link >
@@ -255,8 +255,8 @@ function MobileNavigationMenu() {
                                     {/* Category Start */}
                                     <TabsContent value="category">
                                         {/* MobileMenuNavigation start */}
-                                        <div>
-                                            <ul className="">
+                                        <div className="overflow-y-scroll h-[calc(100vh-100px)]">
+                                            <ul >
                                                 {
                                                     categories.map((sub1) =>
 
