@@ -5,7 +5,7 @@ import { FaFacebookF, FaLinkedinIn, FaTwitter, FaYoutube } from "react-icons/fa6
 
 function PublicFooter() {
     return (
-        <div className="bg-white py-15 shadow-2xl mt-5">
+        <div className="bg-white pt-15 pb-6 shadow-2xl mt-5">
             <div className="my-container ">
                 <div className="flex gap-6 pb-10">
                     <div className="basis-[33%]">
@@ -77,7 +77,7 @@ function PublicFooter() {
                     </div>
                 </div>
                 <span className="block bg-gray-200 h-px mt-6"></span>
-                <p className="pt-3 text-center">OmniMart © All rights reserved.</p>
+                <p className="pt-3 text-center">Logoipsum © All rights reserved.</p>
             </div>
         </div>
     );
