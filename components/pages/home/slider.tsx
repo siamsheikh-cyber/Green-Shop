@@ -1,15 +1,37 @@
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import Image from "next/image";
+const Array = [
+    {
+        id: 1,
+        image: "https://geniusdevs.com/codecanyon/omnimart/core/public/storage/images/16343905891630493728s2.jpg",
+    },
+    {
+        id: 2,
+        image: "https://geniusdevs.com/codecanyon/omnimart/core/public/storage/images/16343906281630493865s3.jpg",
+    },
+    {
+        id: 3,
+        image: "https://geniusdevs.com/codecanyon/omnimart/core/public/storage/images/16343905891630493728s2.jpg",
+    },
+    {
+        id: 4,
+        image: "https://geniusdevs.com/codecanyon/omnimart/core/public/storage/images/16343906281630493865s3.jpg",
+    },
+    {
+        id: 5,
+        image: "https://geniusdevs.com/codecanyon/omnimart/core/public/storage/images/16343905891630493728s2.jpg",
+    }
+]
 
 function Slider() {
     return (
         <div className="my-container">
             <Carousel className="w-full mt-8 rounded-lg overflow-hidden">
                 <CarouselContent>
-                    {Array.from({ length: 5 }).map((_, index) => (
-                        <CarouselItem key={index}>
+                    {Array.map((item, index) => (
+                        <CarouselItem key={item.id}>
                             <Image
-                                src={"https://geniusdevs.com/codecanyon/omnimart/core/public/storage/images/16343905891630493728s2.jpg"}
+                                src={item.image}
                                 alt='image'
                                 width={1200}
                                 height={400}
