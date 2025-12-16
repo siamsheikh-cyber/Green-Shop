@@ -3,6 +3,7 @@ import { InputGroup, InputGroupAddon, InputGroupInput } from "@/components/ui/in
 import { ChevronRight, Facebook, Linkedin, MailIcon, Twitter, Youtube } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { FaFacebookF, FaLinkedinIn, FaTwitter, FaYoutube } from "react-icons/fa";
 
 function PublicFooter() {
     return (
@@ -24,25 +25,25 @@ function PublicFooter() {
                         <ul className="py-5 flex gap-x-2">
                             <li>
                                 <a href="#" className="w-9 h-9 bg-primary rounded flex justify-center items-center btn-animate">
-                                    <Facebook className="text-white w-5" />
+                                    <FaFacebookF className="text-white w-5" />
                                 </a>
                             </li>
 
                             <li>
                                 <a href="#" className="w-9 h-9 bg-primary rounded flex justify-center items-center btn-animate">
-                                    <Twitter className="text-white w-5" />
+                                    <FaTwitter className="text-white w-5" />
                                 </a>
                             </li>
 
                             <li>
                                 <a href="#" className="w-9 h-9 bg-primary rounded flex justify-center items-center btn-animate">
-                                    <Youtube className="text-white w-5" />
+                                    <FaYoutube className="text-white w-5" />
                                 </a>
                             </li>
 
                             <li>
                                 <a href="#" className="w-9 h-9 bg-primary rounded flex justify-center items-center btn-animate">
-                                    <Linkedin className="text-white w-5" />
+                                    <FaLinkedinIn className="text-white w-5" />
                                 </a>
                             </li>
                         </ul>

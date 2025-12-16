@@ -9,7 +9,7 @@ export default function ProductCart() {
         <div className="bg-white rounded-lg group overflow-hidden border border-transparent hover:border-primary duration-300">
             <div className="relative overflow-hidden">
                 <Image
-                    src={'https://geniusdevs.com/codecanyon/omnimart/core/public/storage/images/1634134755JdFHdb695965a744470b958f17251d4d277ew.jpg'}
+                    src={'https://geniusdevs.com/codecanyon/omnimart/core/public/storage/images/16341355498taHd734b291822a4cdd8ffe19da91b365e8F.jpg'}
                     alt="this is product image"
                     width={400}
                     height={400}
