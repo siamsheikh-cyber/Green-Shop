@@ -51,7 +51,7 @@
   --card-foreground: oklch(0.141 0.005 285.823);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.141 0.005 285.823);
-  --primary: oklch(76.511% 0.1856 130.492);
+  --primary: #00DC33;
   --primary-foreground: oklch(0.986 0.031 120.757);
   --secondary: oklch(0.967 0.001 286.375);
   --secondary-foreground: oklch(0.21 0.006 285.885);
@@ -76,6 +76,7 @@
   --sidebar-accent-foreground: oklch(0.21 0.006 285.885);
   --sidebar-border: oklch(0.92 0.004 286.32);
   --sidebar-ring: oklch(0.841 0.238 128.85);
+  --color-body: #505050;
 }
 
 .dark {
@@ -85,7 +86,7 @@
   --card-foreground: oklch(0.985 0 0);
   --popover: oklch(0.21 0.006 285.885);
   --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(79.148% 0.21097 131.858);
+  --primary: #00DC33;
   --primary-foreground: oklch(0.986 0.031 120.757);
   --secondary: oklch(0.274 0.006 286.033);
   --secondary-foreground: oklch(0.985 0 0);
@@ -123,11 +124,10 @@
   }
 
   .my-container {
-    @apply max-w-6xl mx-auto px-6
+    @apply max-w-6xl mx-auto px-4;
   }
 
   .btn-animate {
-    @apply relative z-1 hover:text-white before:w-full before:h-full before:absolute before:top-0 before:left-0 before:bg-black before:-z-1 before:scale-x-0 hover:before:scale-x-100 before:duration-400 before:origin-left overflow-hidden;
+    @apply relative z-1 hover:text-white before:w-full before:h-full before:absolute before:top-0 before:left-0 before:bg-black before:-z-1 before:scale-x-0 hover:before:scale-x-100 before:duration-300 before:origin-left overflow-hidden;
   }
-
 }

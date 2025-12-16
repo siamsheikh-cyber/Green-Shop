@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/image"
 
 const serviceData = [
     {
@@ -27,8 +27,8 @@ const serviceData = [
     }
 ]
 
-function Service() {
 
+export default function Service() {
     return (
         <div className="my-container py-10">
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-3">
@@ -50,7 +50,5 @@ function Service() {
                 ))}
             </div>
         </div>
-    );
+    )
 }
-
-export default Service;

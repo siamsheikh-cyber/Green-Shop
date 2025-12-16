@@ -6,11 +6,11 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'cdn.dummyjson.com',
+        hostname: 'placehold.co',
       },
       {
         protocol: 'https',
-        hostname: 'placehold.co',
+        hostname: 'cdn.dummyjson.com',
       },
       {
         protocol: 'https',

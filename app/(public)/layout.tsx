@@ -1,5 +1,5 @@
 import PublicMainLayout from "@/components/layout/public/mainLayout";
-import { Children, ReactNode } from "react";
+import { ReactNode } from "react";
 
 function PublicLayout({ children }: { children: ReactNode }) {
     return (
