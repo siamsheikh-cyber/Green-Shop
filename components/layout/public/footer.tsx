@@ -109,7 +109,7 @@ function PublicFooter() {
                 </div>
 
                 <p className="py-6 border-t text-center">
-                    Developer © All rights reserved.
+                    Developed by Siam Sheikh
                 </p>
             </div>
         </div>

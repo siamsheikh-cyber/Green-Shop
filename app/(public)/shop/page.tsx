@@ -1,3 +1,4 @@
+import ProductFilterLeft from '@/components/pages/shop/productFilterLeft';
 import ProductFilterTop from '@/components/pages/shop/productFilterTop';
 import PageBraeadcrumb from '@/components/share/pageBraeadcrumb'
 import { IBraeadcrumb } from '@/type/type';
@@ -15,6 +16,7 @@ export default function ShopPage() {
         <>
             <PageBraeadcrumb pages={pages} />
             <ProductFilterTop />
+            <ProductFilterLeft />
         </>
     )
 }
