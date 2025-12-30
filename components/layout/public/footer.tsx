@@ -113,7 +113,7 @@ function PublicFooter() {
                 </div>
 
                 <p className="py-6 border-t text-center">
-                    Developed by Siam Sheikh.
+                    OmniMart © All rights reserved.
                 </p>
             </div>
         </div>

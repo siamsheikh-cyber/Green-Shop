@@ -9,12 +9,12 @@ function PublicHeader() {
             <div className="bg-primary py-2">
                 <div className="my-container">
                     <div className="flex flex-col md:flex-row justify-between items-center">
-                        <Link className="flex items-center gap text-white" href={"/"}>
-                            <MapPin size={14} color="white" />
-                            Track Order
+                        <Link className="flex text-white" href={"/"}>
+                            <MapPin color="white" />
+                            Track order
                         </Link>
                         <div className="flex gap-x-3 text-white">
-                            <a className="border-r pr-3" href="tel:01728619733">01339539820</a>
+                            <a className="border-r pr-3" href="tel:01728619733">01728619733</a>
                             <Link href={"/"}>Login</Link>
                         </div>
                     </div>

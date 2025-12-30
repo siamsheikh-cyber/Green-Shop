@@ -82,7 +82,7 @@ export default function Navbar() {
                                     <Link className="flex h-12 pr-3 items-center hover:text-primary" href={"/"}>Home</Link>
                                 </li>
                                 <li>
-                                    <Link className="flex h-12 pr-3 items-center hover:text-primary" href={"/shop"}>Shop</Link>
+                                    <Link className="flex h-12 pr-3 items-center hover:text-primary" href={"/"}>Shop</Link>
                                 </li>
                                 <li>
                                     <Link className="flex h-12 pr-3 items-center hover:text-primary" href={"/"}>Campaign</Link>
