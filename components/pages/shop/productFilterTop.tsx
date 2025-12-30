@@ -2,17 +2,42 @@
 
 import { Button } from "@/components/ui/button";
 import { ButtonGroup } from "@/components/ui/button-group";
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
+import { useProductPreviewStore } from "@/store/productPreview";
 import { ChevronDown, Funnel, Grid2x2, List } from "lucide-react";
-import { useState } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
 
 export default function ProductFilterTop() {
-    const [view, setView] = useState("grid");
 
+    const { preview, setPreview } = useProductPreviewStore();
 
-    const viewHandler = (text: string) => {
+    const router = useRouter();
+    const searchParams = useSearchParams();
+
+    const viewHandler = (text: "grid" | "list") => {
         // task for zustand;
-        setView(text);
+        setPreview(text);
+    }
+
+    const handleFilter = (text: string) => {
+        const params = new URLSearchParams(searchParams.toString());
+        if (text == 'All products') {
+            params.delete('filter');
+        } else {
+            params.set("filter", text);
+        }
+        router.push(`?${params.toString()}`);
+    }
+
+    const handlePriceSort = (text: string) => {
+        const params = new URLSearchParams(searchParams.toString());
+        if (text == "default") {
+            params.delete("price_sort");
+        }
+        else {
+            params.set("price_sort", text);
+        }
+        router.push(`?${params.toString()}`);
     }
 
     return (
@@ -21,11 +46,11 @@ export default function ProductFilterTop() {
                 <DropdownMenu>
                     <DropdownMenuTrigger className="border py-2 px-4 flex items-center gap-x-1 text-black/70"><Funnel size={16} /> Quick filter</DropdownMenuTrigger>
                     <DropdownMenuContent>
-                        <DropdownMenuLabel>All products</DropdownMenuLabel>
-                        <DropdownMenuItem>Featured products</DropdownMenuItem>
-                        <DropdownMenuItem>Best sellers</DropdownMenuItem>
-                        <DropdownMenuItem>Top rated</DropdownMenuItem>
-                        <DropdownMenuItem>New Arrival</DropdownMenuItem>
+                        <DropdownMenuItem onClick={() => handleFilter('All products')}>All products</DropdownMenuItem>
+                        <DropdownMenuItem onClick={() => handleFilter('Featured products')}>Featured products</DropdownMenuItem>
+                        <DropdownMenuItem onClick={() => handleFilter('Best sellers')}>Best sellers</DropdownMenuItem>
+                        <DropdownMenuItem onClick={() => handleFilter('Top rated')}>Top rated</DropdownMenuItem>
+                        <DropdownMenuItem onClick={() => handleFilter('New Arrival')}>New Arrival</DropdownMenuItem>
                     </DropdownMenuContent>
                 </DropdownMenu>
 
@@ -37,19 +62,19 @@ export default function ProductFilterTop() {
                             <ChevronDown className="mt-1" size={16} />
                         </DropdownMenuTrigger>
                         <DropdownMenuContent>
-                            <DropdownMenuLabel>All products</DropdownMenuLabel>
-                            <DropdownMenuItem>Low - High price</DropdownMenuItem>
-                            <DropdownMenuItem>High - Low price</DropdownMenuItem>
+                            <DropdownMenuItem onClick={() => handlePriceSort('default')}>Default</DropdownMenuItem>
+                            <DropdownMenuItem onClick={() => handlePriceSort('Low - High price')}>Low - High price</DropdownMenuItem>
+                            <DropdownMenuItem onClick={() => handlePriceSort('High - Low price')}>High - Low price</DropdownMenuItem>
                         </DropdownMenuContent>
                     </DropdownMenu>
                 </div>
 
                 <div className="ml-auto">
                     <ButtonGroup>
-                        <Button onClick={() => viewHandler("grid")} variant={view == "grid" ? "default" : "outline"} className="cursor-pointer">
+                        <Button onClick={() => viewHandler("grid")} variant={preview == "grid" ? "default" : "outline"} className="cursor-pointer">
                             <Grid2x2 />
                         </Button>
-                        <Button onClick={() => viewHandler("list")} variant={view == "list" ? "default" : "outline"} className="cursor-pointer"><List /></Button>
+                        <Button onClick={() => viewHandler("list")} variant={preview == "list" ? "default" : "outline"} className="cursor-pointer"><List /></Button>
                     </ButtonGroup>
                 </div>
 

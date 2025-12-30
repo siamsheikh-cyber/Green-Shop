@@ -1,9 +1,11 @@
+
+
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 import { InputGroup, InputGroupAddon, InputGroupInput } from "@/components/ui/input-group";
 import { ChevronRight, Facebook, Linkedin, MailIcon, Twitter, Youtube } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { FaFacebookF, FaLinkedinIn, FaTwitter, FaYoutube } from "react-icons/fa";
 
 function PublicFooter() {
     return (
@@ -25,25 +27,25 @@ function PublicFooter() {
                         <ul className="py-5 flex gap-x-2">
                             <li>
                                 <a href="#" className="w-9 h-9 bg-primary rounded flex justify-center items-center btn-animate">
-                                    <FaFacebookF className="text-white w-5" />
+                                    <Facebook className="text-white w-5" />
                                 </a>
                             </li>
 
                             <li>
                                 <a href="#" className="w-9 h-9 bg-primary rounded flex justify-center items-center btn-animate">
-                                    <FaTwitter className="text-white w-5" />
+                                    <Twitter className="text-white w-5" />
                                 </a>
                             </li>
 
                             <li>
                                 <a href="#" className="w-9 h-9 bg-primary rounded flex justify-center items-center btn-animate">
-                                    <FaYoutube className="text-white w-5" />
+                                    <Youtube className="text-white w-5" />
                                 </a>
                             </li>
 
                             <li>
                                 <a href="#" className="w-9 h-9 bg-primary rounded flex justify-center items-center btn-animate">
-                                    <FaLinkedinIn className="text-white w-5" />
+                                    <Linkedin className="text-white w-5" />
                                 </a>
                             </li>
                         </ul>
@@ -86,7 +88,9 @@ function PublicFooter() {
 
                         <form>
                             <InputGroup className="rounded-none">
-                                <InputGroupInput placeholder="Your email" />
+                                <Input
+                                    className="border-0 focus:outline-0 focus:border-0 focus:shadow-none"
+                                />
                                 <InputGroupAddon>
                                     <MailIcon />
                                 </InputGroupAddon>
@@ -109,7 +113,7 @@ function PublicFooter() {
                 </div>
 
                 <p className="py-6 border-t text-center">
-                    Developed by Siam Sheikh
+                    Developed by Siam Sheikh.
                 </p>
             </div>
         </div>
