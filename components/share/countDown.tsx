@@ -54,7 +54,7 @@ export default function CountDown({ variation, targetDate }: { targetDate: any; 
                     <span>{count.days} <span className="text-xs">Days</span></span>
                     <span>{count.hours} <span className="text-xs">Hrs</span></span>
                     <span>{count.minutes} <span className="text-xs">Min</span></span>
-                    <span>{count.seconds} <span className="text-xs">Sec</span></span>
+                    <span className="text-red-500">{count.seconds} <span className="text-xs text-white">Sec</span></span>
                 </div>
 
                 :

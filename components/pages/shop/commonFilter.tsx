@@ -50,14 +50,15 @@ export default function CommonFilter({ data, param_text }: { data: string[], par
                 <li key={index}>
                     <label className="inline-flex cursor-pointer items-center gap-x-1 hover:text-primary py-1 text-black/70" >
                         <input onChange={(e) => handleChange(e.target.value, e)} type="checkbox" value={text} />
-                        <span className="capitalize">{text}</span>
+                        <span className={`capitalize ${text == "blue" ? " hover:text-blue-600" : text == "red" ? " hover:text-red-600" : ""}`}>{text}</span>
                     </label>
                 </li>
-            ))}
+            ))
+            }
 
 
 
 
-        </ul>
+        </ul >
     )
 }

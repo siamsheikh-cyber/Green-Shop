@@ -17,7 +17,7 @@ export default function Navbar() {
                 <div className="my-container">
                     <div className="flex">
                         <div className="relative">
-                            <h4 onClick={() => setActive(!active)} className="p-3 h-12 w-[280px] bg-primary cursor-pointer flex items-center gap-x-1.5 text-white">
+                            <h4 onClick={() => setActive(!active)} className="p-3 h-12 w-70 bg-primary cursor-pointer flex items-center gap-x-1.5 text-white">
                                 <Menu color="white" />
                                 <span className="text-lg text-white">Categories</span>
                             </h4>
