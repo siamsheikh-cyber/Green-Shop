@@ -30,7 +30,7 @@ export default function FilterByPrice() {
             />
 
             <div className="flex justify-between mt-6">
-                <Button onClick={handleClick} size={"sm"}>Filter</Button>
+                <Button className="rounded-[3px]" onClick={handleClick} size={"sm"}>Filter</Button>
                 <p>{values[0]} - {values[1]}</p>
             </div>
         </div>

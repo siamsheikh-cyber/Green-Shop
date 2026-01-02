@@ -23,19 +23,19 @@ export default async function ShopPage() {
             <div className="grid grid-cols-4 gap-4 my-container">
                 <div className="col-span-1">
                     <div className="bg-white p-4 mb-5">
-                        <h3 className="font-semibold text-xl border-b-2 pb-2">Shop Categories</h3>
+                        <h3 className="font-semibold text-xl border-b-2 pb-2 relative border_style">Shop Categories</h3>
 
                         <FilterByCategory />
                     </div>
 
                     <div className="bg-white p-4 mb-5">
-                        <h3 className="font-semibold text-xl border-b-2 pb-2">Filter by Price</h3>
+                        <h3 className="font-semibold text-xl border-b-2  relative border_style pb-2">Filter by Price</h3>
 
                         <FilterByPrice />
                     </div>
 
                     <div className="bg-white p-4 mb-5">
-                        <h3 className="font-semibold text-xl border-b-2 pb-2">Filter by Color</h3>
+                        <h3 className="font-semibold text-xl border-b-2 relative border_style pb-2">Filter by Color</h3>
 
                         <CommonFilter
                             data={["red", "green", "blue"]}
@@ -44,7 +44,7 @@ export default async function ShopPage() {
                     </div>
 
                     <div className="bg-white p-4 mb-5">
-                        <h3 className="font-semibold text-xl border-b-2 pb-2">Filter by Size</h3>
+                        <h3 className="font-semibold text-xl border-b-2 relative border_style pb-2">Filter by Size</h3>
 
                         <CommonFilter
                             data={["M", "L", "XL"]}
@@ -53,7 +53,7 @@ export default async function ShopPage() {
                     </div>
 
                     <div className="bg-white p-4 mb-5">
-                        <h3 className="font-semibold text-xl border-b-2 pb-2">Filter by Brand</h3>
+                        <h3 className="font-semibold text-xl border-b-2 relative border_style pb-2">Filter by Brand</h3>
 
                         <CommonFilter
                             data={[

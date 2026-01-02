@@ -51,7 +51,7 @@ export default function FlashDealItem() {
 
                 <CountDown
                     variation="circle"
-                    targetDate={new Date(2025, 11, 17, 0, 0, 0)}
+                    targetDate={new Date(2026, 1, 10, 8, 1, 0)}
                 />
             </div>
 
