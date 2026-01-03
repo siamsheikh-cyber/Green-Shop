@@ -41,8 +41,8 @@ const product = {
         }
     ],
     galleries: [
+        "https://geniusdevs.com/codecanyon/omnimart/core/public/storage/images/1634134938VjgHcb62dec2d6a241fc90ce2bb04059684em.jpg",
         "https://geniusdevs.com/codecanyon/omnimart/core/public/storage/images/1634134755JdFHdb695965a744470b958f17251d4d277ew.jpg",
-        "https://geniusdevs.com/codecanyon/omnimart/core/public/storage/images/1634134938VjgHcb62dec2d6a241fc90ce2bb04059684em.jpg"
     ],
     specifications: {
         "Product Type": "Velvet elegant sleeveless evening dress",
@@ -77,7 +77,7 @@ export default function SingleProduct() {
                     <TabsList className="m-auto">
                         <TabsTrigger
                             value="account"
-                            className="px-6 py-6 cursor-pointer
+                            className="px-6 py-6 cursor-pointer rounded-sm rounded-b-none
                  data-[state=active]:bg-primary
                  data-[state=active]:text-primary-foreground"
                         >
@@ -86,7 +86,7 @@ export default function SingleProduct() {
 
                         <TabsTrigger
                             value="password"
-                            className="px-6 py-6 cursor-pointer
+                            className="px-6 py-6 cursor-pointer rounded-sm rounded-b-none
                  data-[state=active]:bg-primary
                  data-[state=active]:text-primary-foreground"
                         >
@@ -95,13 +95,13 @@ export default function SingleProduct() {
                     </TabsList>
 
                     <TabsContent value="account">
-                        <div className="bg-white p-4 rounded-xl mt-4 mb-6">
+                        <div className="bg-white p-4 rounded-xl mb-6">
                             {long_description}
                         </div>
                     </TabsContent>
 
                     <TabsContent value="password">
-                        <div className="bg-white p-4 rounded-xl mt-4 mb-6">
+                        <div className="bg-white p-4 rounded-xl mb-6">
                             <div className="grid grid-cols-1">
                                 <div className="grid grid-cols-2 border-t border-b border-l border-r py-2 bg-gray-100 px-2">
                                     <span className="font-medium block ">Specifications</span>

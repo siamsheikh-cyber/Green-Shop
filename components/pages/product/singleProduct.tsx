@@ -53,21 +53,21 @@ export default function SingleProductDetails({ product }: { product: any }) {
             <StarGroup className="py-4" count={product.ratting} />
 
             <div className="flex items-center gap-x-2.5">
-                <del className="text-2xl text-black/40">৳ {formatPrice(product.prev_price)}</del>
+                <del className="text-2xl text-black/40">৳ {formatPrice(product.prev_price * count)}</del>
                 <span className="text-2xl text-primary font-medium">৳ {formatPrice(product.current_price * count)}</span>
             </div>
 
             <p className="py-4 text-black/60">{product.short_description}</p>
 
             <div className="flex gap-x-5 items-center py-4">
-                <div className="flex gap-x-1">
-                    <Button onClick={handleMinus} className="cursor-pointer"><Minus /></Button>
-                    <Input value={count} onChange={(e) => handleInput(e.target.value)} className="w-14 text-center font-semibold" />
-                    <Button onClick={handlePlus} className="cursor-pointer"><Plus /></Button>
+                <div className="flex">
+                    <Button onClick={handleMinus} className="cursor-pointer bg-white border rounded-none text-black/70"><Minus /></Button>
+                    <Input value={count} onChange={(e) => handleInput(e.target.value)} className="w-14 text-center font-semibold  bg-white border rounded-none text-black/70" />
+                    <Button onClick={handlePlus} className="cursor-pointer bg-white border rounded-none text-black/70"><Plus /></Button>
                 </div>
                 <div className="flex gap-x-2">
-                    <Button className="rounded-sm cursor-pointer btn-animate">Add to cart</Button>
-                    <Button className="rounded-sm cursor-pointer btn-animate">Buy now</Button>
+                    <Button className="rounded-[3px] cursor-pointer btn-animate">Add to cart</Button>
+                    <Button className="rounded-[3px] cursor-pointer btn-animate">Buy now</Button>
                 </div>
 
             </div>
@@ -87,8 +87,8 @@ export default function SingleProductDetails({ product }: { product: any }) {
 
             <div className="flex justify-between items-center">
                 <div className="flex gap-x-2">
-                    <Button className="rounded-sm cursor-pointer btn-animate"><Heart /> Wishlist</Button>
-                    <Button className="rounded-sm cursor-pointer btn-animate"><Scale /> Compare</Button>
+                    <Button className="rounded-[3px] cursor-pointer btn-animate"><Heart /> Wishlist</Button>
+                    <Button className="rounded-[3px] cursor-pointer btn-animate"><Scale /> Compare</Button>
                 </div>
 
                 <SocialShare />
