@@ -24,7 +24,7 @@ export function ResetPassword({
     <div className={cn("flex flex-col gap-6", className)} {...props}>
       <Card>
         <CardHeader>
-          <CardTitle className="text-center">Write your gmail for reset password</CardTitle>
+          <CardTitle className="text-center">Password Change Request</CardTitle>
         </CardHeader>
         <CardContent>
           <form>
@@ -34,13 +34,13 @@ export function ResetPassword({
                 <Input
                   id="email"
                   type="email"
-                  placeholder="m@example.com"
+                  placeholder="admin@gmail.com"
                   required
                 />
               </Field>
 
               <Field>
-                <Link href={"http://localhost:3000/dashboard/auth/otp"} type="submit" className="rounded-[5px] cursor-pointer block w-full py-2 text-center bg-green-600 text-white">Send OTP</Link>
+                <Link href={"http://localhost:3000/dashboard/auth/otp"} type="submit" className="rounded-[5px] cursor-pointer block w-full py-2 text-center bg-green-600 text-white">Send OTP To Email</Link>
               </Field>
 
             </FieldGroup>

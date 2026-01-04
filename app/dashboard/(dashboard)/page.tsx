@@ -1,11 +1,9 @@
-function AdminDashboard() {
-    return (
-        <>
-            <div>
-                admin layout
-            </div>
-        </>
-    );
-}
 
-export default AdminDashboard;
+
+export default function Page() {
+  return (
+    <div>
+      dashboard main page
+    </div>
+  )
+}
